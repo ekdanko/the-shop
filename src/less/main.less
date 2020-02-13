@@ -114,7 +114,7 @@
 
 
 .breadcr{
-    padding:60px 80px 10px;
+    padding:44px 80px 10px;
 
     &__list{
         list-style: none;
@@ -156,6 +156,116 @@
     }
 
 
+}
+
+.content{
+    display: flex;
+    padding: 0 80px;
+
+    .product{
+
+        &__pic{
+            width: 600px;
+            height: 600px;
+        }
+    }
+    .char{
+        display: inline-block;
+        padding: 5px 40px;
+        &__title{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+       &__disc{
+           padding-top: 20px;
+           font-size: 14px;
+       } 
+
+       &__price{
+           padding: 28px 0;
+           font-size: 38px;
+           font-weight: bold;
+           color:#ba0822;
+       }
+    }
+
+    .size{
+
+        &__title{
+            padding-bottom: 7px;
+        }
+        .select{
+
+            &__list{
+                list-style: none;
+            }
+
+            &__elem{
+                display: inline-block;
+                padding: 8px;
+                width: 56px;
+                height: 56px;
+                border:1px #000 solid;
+
+                &:hover{
+                    border:2px #ba0822 solid;
+                }
+            }
+
+            &__link{
+                text-decoration: none;
+                font-size: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .color{
+
+        padding: 30px 0;
+        &__title{
+            padding-bottom: 7px;
+        }
+        .select{
+
+            &__list{
+                list-style: none;
+            }
+
+            &__elem{
+                display: inline-block;
+                padding: 8px;
+                width: 56px;
+                height: 56px;
+                border:1px #000 solid;
+
+                &:hover{
+                    border:2px #ba0822 solid;
+                }
+                &:first-child {
+                    background: #fff;
+                }
+                &:nth-child(2){
+                    background:#e3d956; 
+                }
+                &:last-child{
+                    background:#a5af97;
+                }
+                
+            }
+
+            &__link{
+                text-decoration: none;
+                font-size: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
 
 
