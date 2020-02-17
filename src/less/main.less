@@ -67,36 +67,28 @@
 }   
 
 .menu {
-        list-style: none;
+    list-style: none;
 
     &__elem {
         display: inline-block;
         padding: 3px;
-        
-        &:first-child {
-            text-transform: uppercase;
-            font-weight: bold;
-            
-        }
-    
-
-    }  
-
-
-    &__link {
         color: #ba0822;
+        cursor: pointer;
 
-        &:first-child{
-            color: #000;
-        } 
+        &._current {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
         &:hover{
             color: #000;
-            cursor: pointer;
         }
-    }
+    }  
 
-    
+    &__link {
+        color: inherit;
+    }
 }
 
 .search{
