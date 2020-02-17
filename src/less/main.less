@@ -22,6 +22,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 80px;
+    position: relative;
 
     &__logo{
         background: url(../img/icons/the_shop_logo.svg) center no-repeat;
@@ -35,6 +36,10 @@
         height: 50px;
         width: 50px;
         transition: background .3s, transform .3s;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
 
         &:hover {
             background: url(../img/icons/oggetto_logo_copy.svg) center;  
@@ -68,15 +73,22 @@
         display: inline-block;
         padding: 3px;
         
-    }
+        &:first-child {
+            text-transform: uppercase;
+            font-weight: bold;
+            
+        }
+    
 
-    &__elem:first-child {
-        text-transform: uppercase;
-        
-    }
+    }  
+
 
     &__link {
         color: #ba0822;
+
+        &:first-child{
+            color: #000;
+        } 
 
         &:hover{
             color: #000;
@@ -85,7 +97,6 @@
     }
 
     
-
 }
 
 .search{
@@ -379,42 +390,52 @@
         }
 
         .loyal{
+            
 
             &__list{
+                
                 display: inline-block;
                 list-style: none;
                 padding-right: 20px ;
             }
         
             &__elem{
-                padding: 10px;
+                position: relative;
+                padding: 15px;
                 display: flex;
                 align-items: center;
 
                 &:first-child::before {
                     content: '';
                     background: url(../img/icons/delivery.svg) no-repeat center;
-                    width: 35px;
-                    height: 35px;
+                    background-size: 40px 40px;
+                    width: 40px;
+                    height: 40px;
                     display: inline-block;
+                    position: absolute;
+                    right: 100%;
                 }
 
                 &:nth-child(2)::before{
+                    position: absolute;
                     content: '';
                     background: url(../img/icons/samples.svg) no-repeat center;
-                    background-size: 25px 25px;
-                    width: 25px;
-                    height: 25px;
+                    background-size: 30px 30px;
+                    width: 30px;
+                    height: 30px;
                     display: inline-block;
+                    right: 100%;
                 }
 
                 &:last-child::before{
+                    position: absolute;
                     content: '';
                     background: url(../img/icons/cup.svg) no-repeat center;
                     background-size: 20px 20px;
                     width: 20px;
                     height: 20px;
                     display: inline-block;
+                    right: 100%;
                 }
             }
 
@@ -430,38 +451,41 @@
             padding: 0 80px 0 0;
 
             &__list{
-                display: flex;
-                align-items: stretch;
+                
                 list-style: none;
             }
             &__elem{
                 padding: 4px;
-                display: block;
+                display: flex;
+                align-items: stretch;
+                padding: 12px;
 
                 &:first-child{
                     content: '';
                     background: url(../img/icons/facebook.svg) no-repeat center;
-                    width: 20px;
-                    height: 20px;
-                    display: block;
+                    background-size: 25px 25px;
+                    width: 25px;
+                    height: 25px;
+                    
                 }
 
                 &:nth-child(2){
                     content: '';
                     background: url(../img/icons/twitter.svg) no-repeat center;
-                    background-size: 20px 20px;
-                    width: 20px;
-                    height: 20px;
-                    display: block;
+                    background-size: 25px 25px;
+                    width: 25px;
+                    height: 25px;
+                    
+                   
                 }
 
                 &:last-child{
                     content: '';
                     background: url(../img/icons/instagram.svg) no-repeat center;
-                    background-size: 20px 20px;
-                    width: 20px;
-                    height: 20px;
-                    display: block;
+                    background-size: 25px 25px;
+                    width: 25px;
+                    height: 25px;
+          
                 }
             }
         }
