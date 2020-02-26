@@ -1,0 +1,58 @@
+.nav{
+    background: #f1f2ec;
+    border-top: 1px #d4d5d0 solid;
+    border-bottom: 1px #d4d5d0 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px;
+}   
+
+.menu {
+    list-style: none;
+
+    &__elem {
+        display: inline-block;
+        padding: 3px;
+        color: #ba0822;
+        cursor: pointer;
+
+        &._current {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        &:hover{
+            color: #000;
+        }
+    }  
+
+    &__link {
+        color: inherit;
+    }
+}
+
+.search{
+    position: relative;
+
+    &__input{
+        width: 240px;
+        height: 40px;
+        padding: 5px;
+        
+    }
+
+    &__button{
+        position: absolute;
+        right: 0;
+        top:0;
+        background: url(../../img/icons/search.svg) no-repeat center;
+        background-size: 35px 35px;
+        background-position: center ;
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+    }
+}

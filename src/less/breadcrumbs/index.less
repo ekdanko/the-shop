@@ -1,0 +1,44 @@
+.breadcr{
+    padding:44px 80px 10px;
+
+    &__list{
+        list-style: none;
+        display: flex;
+    }
+
+    &__elem{
+        display: inline-block;
+        // position: relative;
+        // padding: 0 5px;
+        
+        &::after{
+            
+            content: '/';
+            display: inline-block;
+            // top: 0;
+            // right: 0;
+            padding: 0 5px;
+            
+
+        }
+
+        &:last-child::after{
+            display: none;
+        }
+        
+    }
+
+    
+
+    &__link{
+        font-weight: bold;
+        color: #ba0822;
+
+        &:hover{
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+
+}

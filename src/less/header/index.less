@@ -1,0 +1,44 @@
+
+@import "navigation";
+
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    position: relative;
+
+    &__logo{
+        background: url(../../img/icons/the_shop_logo.svg) center no-repeat;
+        width: 107px;
+        height: 32px;
+        
+    }
+
+    &__ogg{
+        background: url(../../img/icons/oggetto_logo.svg) center no-repeat;
+        height: 50px;
+        width: 50px;
+        transition: background .3s, transform .3s;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+
+        &:hover {
+            background: url(../../img/icons/oggetto_logo_copy.svg) center;  
+            transform:rotate(-180deg);
+        }
+    }
+
+    &__phone {
+        color: #ba0822; 
+        font-weight: bold;
+        font-size: 26px;  
+        line-height: 50px;
+        vertical-align: middle;
+    }
+}
+
