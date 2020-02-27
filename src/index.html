@@ -50,27 +50,37 @@
                 <h1 class="char__title">Футболка Alien technology </h1>
                 <p class="char__disc"> Состав: 100% хлопок, динамическая типизация,польстая нотация. Производство: Россия.</p>
                 <div class="char__price"> <span> 5000 &#8381;</span> </div>
-                <div class="char__size size">
-                    <div class="size__title">Размер S</div>
-                    <div class="size__select select">
-                        <ul class="select__list">
-                            <li class="select__elem"><a href="#" class="select__link">S</a></li>
-                            <li class="select__elem"><a href="#" class="select__link">M</a></li>
-                            <li class="select__elem"><a href="#" class="select__link">L</a></li>
-                        </ul>
+
+                <form>
+                <div class="option">
+                    <div class="option__title">
+                        <span>Размер S</span>
+                    </div>
+                    <div class="option__attribute">
+                        <input type="radio" id="option-size-s" class="option__radio" name="size" value="s">
+                        <label for="option-size-s" class="option__label"><span class="option__text">S</span></label>
+                        <input type="radio" id="option-size-m" class="option__radio" name="size" value="m">
+                        <label for="option-size-m" class="option__label"><span class="option__text">M</span></label>
+                        <input type="radio" id="option-size-l" class="option__radio" name="size" value="l">
+                        <label for="option-size-l" class="option__label"><span class="option__text">L</span></label>
                     </div>
                 </div>
-                <div class="char__color color">
-                    <div class="color__title">Цвет: Белый</div>
-                    <div class="color__select select">
-                        <ul class="select__list">
-                            <li class="select__elem" style="background: #fff;"><a href="#" class="select__link"></a></li>
-                            <li class="select__elem" style="background: yellow;"><a href="#" class="select__link"></a></li>
-                            <li class="select__elem" style="background: green;"><a href="#" class="select__link"></a></li>
-                        </ul>
+                <div class="option">
+                    <div class="option__title">
+                        <span>Цвет: Белый</span>
+                    </div>
+                    <div class="option__attribute">
+                        <input type="radio" id="option-color-white" class="option__radio" name="color" value="white">
+                        <label for="option-color-white"  class="option__label" style="background: white"></label>
+                        <input type="radio" id="option-color-yellow" class="option__radio" name="color" value="yellow">
+                        <label for="option-color-yellow" class="option__label" style="background: yellow;"></label>
+                        <input type="radio" id="option-color-green" class="option__radio" name="color" value="green">
+                        <label for="option-color-green" class="option__label" style="background: green;"></label>
                     </div>
                 </div>
+                
                 <button class="char__buy">Купить</button>
+            </form>
                 <div class="char__later later">
                     <div class="later__icon"></div>
                     <div class="later__text">Отложить на потом</div>
@@ -79,7 +89,7 @@
         </div>
     </main>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="footer__nav">
             <div class="footer__service service">
                 <div class="service__title"> Сервис и поддержка</div>
@@ -94,7 +104,7 @@
                         <li class="service__elem"><a href="#" class="service__link">Способы оплаты</a></li>
                         <li class="service__elem"><a href="#" class="service__link">Правила продажи</a></li>
                         <li class="service__elem"><a href="#" class="service__link">Возврат денежных средств</a></li>
-                        <li class="service__elem"><a href="#" class="service__link">Вопросы и отсветы</a></li>
+                        <li class="service__elem"><a href="#" class="service__link">Вопросы и ответы</a></li>
                     </ul>
                 </div>
             </div>
@@ -130,13 +140,14 @@
 
             </div>
         </div>   
-            <hr class="line"></hr>
-            <div class="copy">
-                 <div class="copy__prava">2005-2020 &#169; 7h35h0p.ru-модный интернет магазин одежды, обуви и аксессуаровю
+        <hr class="line"></hr>
+        <div class="copy">
+            <p class="copy__prava">2005-2020 &#169; 7h35h0p.ru-модный интернет магазин одежды, обуви и аксессуаров.
             Все права защищены. Доставка по России.
+            </p>
+            
         </div>
-    </div>
-    </div>
+    </footer>
     
 
 

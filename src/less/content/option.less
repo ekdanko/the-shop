@@ -1,0 +1,43 @@
+.option {
+    padding-bottom: 20px;
+
+    &__title {
+        padding-bottom: 7px;
+    }
+
+    &__label {
+        display: inline-block;
+        width: 72px;
+        height: 72px;
+        border:1px #000 solid;
+        position: relative;
+
+        &:hover{
+            border:2px #ba0822 solid;
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+    }
+
+    &__radio {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked + label{
+            border:2px #ba0822 solid;
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+    }
+
+    &__text{
+        font-size: 28px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+    }
+
+}
